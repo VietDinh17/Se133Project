@@ -9,6 +9,7 @@ import styles from './App.css';
 import Helmet from 'react-helmet';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Login from '../Login/Login';
 
 // Import Actions
 import { toggleAddPost } from './AppActions';
@@ -59,9 +60,7 @@ export class App extends Component {
             intl={this.props.intl}
             toggleAddPost={this.toggleAddPostSection}
           />
-          <div className={styles.container}>
-            {this.props.children}
-          </div>
+	  <Login />
           <Footer />
         </div>
       </div>
